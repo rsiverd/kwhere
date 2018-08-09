@@ -1,0 +1,4 @@
+numpy==1.12.1
+matplotlib==2.1.0
+astropy==2.0.2
+basemap==1.0.7
