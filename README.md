@@ -24,7 +24,15 @@ some dependencies are missing, try the following:
 $ pip install --upgrade pip
 $ pip install -r requirements.txt
 ```
-
 This should pull in everything needed to run the script. Tested working with
 a Python2.7 virtual environment on CentOS 7.
+
+NOTE: if you are using anaconda, the following should install basemap (which
+is needed to make useful plots):
+```
+$ conda update conda
+$ conda install basemap
+```
+
+
 
