@@ -5,13 +5,13 @@
 #
 # Rob Siverd
 # Created:       2018-05-22
-# Last modified: 2018-06-01
+# Last modified: 2018-09-25
 #--------------------------------------------------------------------------
 #**************************************************************************
 #--------------------------------------------------------------------------
 
 ## Current version:
-__version__ = "0.2.1"
+__version__ = "0.2.2"
 
 ## Python version-agnostic module reloading:
 try:
@@ -24,6 +24,7 @@ except NameError:
 
 ## Modules:
 import argparse
+import warning
 import os
 import sys
 import time
@@ -51,7 +52,9 @@ sq = skysquares
 ## Use basemap for plots, if available:
 _have_basemap = False
 try:
-    from mpl_toolkits.basemap import Basemap
+    with warnings.catch_warnings():
+        warnings.filterwarnings("ignore", category=DeprecationWarning)
+        from mpl_toolkits.basemap import Basemap
     _have_basemap = True
 except ImportError:
     sys.stderr.write("Basemap not installed ... plots will be ugly!\n")
