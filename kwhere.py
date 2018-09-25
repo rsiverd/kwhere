@@ -29,7 +29,6 @@ import os
 import sys
 import time
 import numpy as np
-#from numpy.lib.recfunctions import append_fields
 import matplotlib.pyplot as plt
 #import matplotlib.cm as cm
 #import matplotlib.ticker as mt
@@ -38,10 +37,7 @@ import matplotlib.pyplot as plt
 #from matplotlib import colors
 #import matplotlib.colors as mplcolors
 #import matplotlib.gridspec as gridspec
-#from functools import partial
-#from collections import OrderedDict
-#import multiprocessing as mp
-#np.set_printoptions(suppress=True, linewidth=160)
+
 import angle
 reload(angle)
 
