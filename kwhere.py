@@ -5,13 +5,13 @@
 #
 # Rob Siverd
 # Created:       2018-05-22
-# Last modified: 2018-09-25
+# Last modified: 2018-09-27
 #--------------------------------------------------------------------------
 #**************************************************************************
 #--------------------------------------------------------------------------
 
 ## Current version:
-__version__ = "0.2.2"
+__version__ = "0.2.3"
 
 ## Python version-agnostic module reloading:
 try:
@@ -24,7 +24,7 @@ except NameError:
 
 ## Modules:
 import argparse
-import warning
+import warnings
 import os
 import sys
 import time
