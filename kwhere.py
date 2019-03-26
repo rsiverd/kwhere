@@ -5,13 +5,13 @@
 #
 # Rob Siverd
 # Created:       2018-05-22
-# Last modified: 2018-09-27
+# Last modified: 2019-03-26
 #--------------------------------------------------------------------------
 #**************************************************************************
 #--------------------------------------------------------------------------
 
 ## Current version:
-__version__ = "0.2.3"
+__version__ = "0.2.4"
 
 ## Python version-agnostic module reloading:
 try:
@@ -161,7 +161,7 @@ if __name__ == '__main__':
 
 ##--------------------------------------------------------------------------##
 ## Load KELT field locations and borders:
-kra, kde, kname, active = kelt_fields.as_arrays()
+kra, kde, kname, active, _ = kelt_fields.as_arrays()
 kf_borders = kelt_fields.borders()
 
 ##--------------------------------------------------------------------------##
